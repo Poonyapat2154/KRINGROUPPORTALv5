@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% set page_title='Activity Log' %}{% block content %}<section class="card"><h2>Recent Activity</h2>{% for a in activities %}<div class="activity"><b>{{a.action}}</b><span>{{a.user_name}} · {{a.created_at.strftime('%d %b %Y %H:%M')}}</span></div>{% endfor %}</section>{% endblock %}

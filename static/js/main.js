@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.copy').forEach(el=>el.addEventListener('click',()=>{el.select();navigator.clipboard&&navigator.clipboard.writeText(el.value)}));});

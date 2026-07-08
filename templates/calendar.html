@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% set page_title='Calendar & Timelines' %}{% block content %}<section class="card"><h2>Upcoming Project Deadlines</h2><div class="timeline">{% for p in projects %}<div><b>{{p.end_date}}</b><span>{{p.name}} · {{p.organization}} · {{p.status}}</span></div>{% else %}<p class="muted">No project timelines yet.</p>{% endfor %}</div></section>{% endblock %}
